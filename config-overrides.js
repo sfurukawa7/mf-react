@@ -1,5 +1,4 @@
-const path = require("path");
-const { override, addBabelPlugins, addWebpackAlias } = require("customize-cra");
+const { override, addBabelPlugins } = require("customize-cra");
 
 module.exports = override(
   ...addBabelPlugins([
@@ -9,8 +8,5 @@ module.exports = override(
         "@ducks": "./src/ducks",
       },
     },
-  ]),
-  addWebpackAlias({
-    "@ducks": path.resolve(__dirname, "./src/ducks"),
-  })
+  ])
 );
