@@ -1,20 +1,16 @@
-import { ColorActionType, ColorState } from './types';
+import { ColorActionType, ColorState } from "./types";
 
 const initialState = (): ColorState => ({
-  color: 'blue',
+  color: "blue",
 });
-
-const reducer = (
-  state = initialState(),
-  action: ColorActionType
-): ColorState => {
+const reducer = (state = initialState(), action: ColorActionType): ColorState => {
   switch (action.type) {
-    case 'red':
-      return { ...state, color: 'red' };
-    case 'blue':
-      return { ...state, color: 'blue' };
-    case 'green':
-      return { ...state, color: 'green' };
+    case "red":
+      return { ...state, color: "red" };
+    case "blue":
+      return { ...state, color: "blue" };
+    case "green":
+      return { ...state, color: "green" };
     default:
       return state;
   }
