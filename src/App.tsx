@@ -19,7 +19,7 @@ const App = () => {
   return (
     <div className="App">
       <div className={`App_Box ${color}`} />
-      <p>Hello Underworld!!</p>
+      <p>Select your favorite Color!!</p>
       <button onClick={changeRed}>Red</button>
       <button onClick={changeBlue}>Blue</button>
       <button onClick={changeGreen}>Green</button>
